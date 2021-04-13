@@ -1,4 +1,4 @@
-xml.tag!("g:id", current_store.id.to_s + "-" + product.id.to_s)
+xml.tag!("g:id", product.slug)
 
 unless product.property("g:title").present?
   xml.tag!("g:title", product.name)
